@@ -7,18 +7,53 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Editor directories and files
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build artifacts
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+
+# Environment variables (QUAN TRỌNG)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.bak
+
+# Debug log
+.node_repl_history
+
+# Testing
+coverage/
+.nyc_output
+
+# Editor / OS
 .vscode/*
 !.vscode/extensions.json
-.idea
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+Thumbs.db
+
+# Turborepo / Nx (Nếu có dùng monorepo)
+.turbo
+.nx
